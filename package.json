@@ -1,0 +1,21 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/router": "^0.2.0",
+    "angular-ui-bootstrap": "^2.2.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "font-awesome": "^4.7.0",
+    "mongoose": "^4.6.0",
+    "ngcomponentrouter": "^2.1.0",
+    "timepicker": "^1.11.5"
+  }
+}

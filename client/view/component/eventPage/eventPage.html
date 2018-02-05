@@ -1,0 +1,23 @@
+<div>
+    <event-filter criteria='criteria'></event-filter>
+</div>
+<div class="eventOrderBySection">
+    <event-order count = 'filtered.length'></event-order>
+</div>
+<div class="pillWrap">
+    <div class="normalEvent" ng-init="total=0;" id="normalEventSection">
+        <div ng-repeat="pill in filtered = (pills | filter:{normal:true} | orderBy: oType | filter: criteriaMatch(criteria))" >
+            <event-pill pill='pill'></event-pill >
+        </div>
+    </div>
+    <div class="specialEvent" stank>
+        <div ng-repeat="pill in pills | filter:{normal:false}" >
+            <special-event pill='pill'></special-event>
+        </div>
+    </div>
+</div>
+<div class="eventMoreButtonSection">
+    <div class="eventMoreButton">
+        <span class="eventMoreFont">加载更多..</span>
+    </div>
+</div>

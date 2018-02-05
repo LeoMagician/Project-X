@@ -1,0 +1,197 @@
+<div class="header-bar-bg">
+	<div class="di-header-container">
+		<div class="di-title-text1">详情板块:&nbsp;&nbsp;</div>
+		<div>
+			<input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked disabled>
+			<label for="checkbox-1" class="checkbox-custom-label">流程细节</label>
+		</div>
+
+		<div>
+			<input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" checked disabled>
+			<label for="checkbox-2" class="checkbox-custom-label">封面图片</label>
+		</div>
+
+		<div>
+			<input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" ng-model="diParticipantReq">
+			<label for="checkbox-3" class="checkbox-custom-label">参与人要求</label>
+		</div>
+
+		<div>
+			<input id="checkbox-4" class="checkbox-custom" name="checkbox-4" type="checkbox" ng-model="diParticipantIntro">
+			<label for="checkbox-4" class="checkbox-custom-label">嘉宾介绍</label>
+		</div>
+
+		<div>
+			<input id="checkbox-5" class="checkbox-custom" name="checkbox-5" type="checkbox" ng-model="diSponsorIntro">
+			<label for="checkbox-5" class="checkbox-custom-label">赞助商介绍</label>
+		</div>
+
+		<div>
+			<input id="checkbox-6" class="checkbox-custom" name="checkbox-6" type="checkbox" ng-model="diTips">
+			<label for="checkbox-6" class="checkbox-custom-label">注意事项</label>
+		</div>
+
+		<div>
+			<input id="checkbox-7" class="checkbox-custom" name="checkbox-7" type="checkbox" ng-model="diEventPromo">
+			<label for="checkbox-7" class="checkbox-custom-label">优惠折扣</label>
+		</div>
+	</div>
+
+</div>
+<div class="basic-info-container detailedInfo-layout di-form-height">
+	<!--左边栏起始-->
+	<div class="basic-info-sidebar-bg">
+
+		<div class="basic-info-sidebar-pic">
+			<div class="text-area-hint ">
+				<div class="icon-lightbull"></div>
+				<p class="text-area-words">活动提示内容</p>
+			</div>
+		</div>
+	</div>
+	<!--左边栏结束-->
+
+	<!--右边栏起始-->
+	<div class="detail-info-main">
+		<div class="bi-form-title"><label>活动详细信息</label></div>
+		<form novalidate class="detail-info-form">
+			<div class="detail-info-form1">
+				<!--流程细节板块-->
+				<div class="di-sec-process">
+					<label class="di-title-text">流程细节：</label>
+					<textarea froala="froalaOptions" ng-model="myHtml" class="di-process-text"></textarea>
+				</div>
+				<!--封面图片板块-->
+				<div class="di-event-pic">
+					<label class="di-title-text">封面图片：</label>
+					<br>
+					<input type="file" name="file" id="file" class="di-uploadimg" coverimg-on-change="uploadCoverImg" />
+					<label for="file"><img id="blah" src="/../../../images/postEventImg/detailedInfoImg/di-event-pic.png" alt="your image" /><span class="di-lable1">添加封面</span></label>
+				</div>
+				<!--参与人要求板块-->
+				<div class="di-sec-process" ng-show="diParticipantReq">
+					<label class="di-title-text">参与人要求：</label>
+					<textarea froala="froalaOptions" ng-model="participantRequire" class="di-process-text"></textarea>
+				</div>
+				<!--嘉宾介绍板块-->
+				<div class="di-event-pic" ng-show="diParticipantIntro">
+					<label class="di-title-text">嘉宾介绍：</label>
+					<div id="space-for-guest">
+						<div class="di-intro-container" ng-repeat="guest in guests track by $index">
+							<div class="di-intro-pic">
+								<input type="file" name="participantFile{{$index}}" id="participantFile{{$index}}" class="di-uploadimg" guest-on-change="uploadParticipantFile"
+									ng-model="detailInfo.participantImg" />
+								<label for="participantFile{{$index}}"><img id="participantImg{{$index}}" src="/../../../images/postEventImg/detailedInfoImg/di-event-pic.png" alt="your image" /><span class="di-lable3">添加图片</span></label>
+							</div>
+
+							<div class="di-intro-content">
+								<input type="text" class="di-input-active di-input-inactive" name="eventTitle{{$index}}" id="eventTitle{{$index}}" ng-model="detailInfo.titles[$index]"
+									maxlength="20" required placeholder="嘉宾姓名">
+								<div class="bi-word-container2">
+									<span class="bi-word-count" id="guestNameCount{{$index}}">0/20</span>
+								</div>
+								<div class="di-intro-container ">
+									<div class="di-intro-text1">
+										<textarea class="form-control bc-event-textarea di-textarea-margin" ng-model="detailInfo.texts[$index]" rows="1" cols="50"
+											maxlength="50" wrap="hard" placeholder="嘉宾介绍"></textarea>
+									</div>
+
+									<div class="di-description-text">
+										<span class="bi-word-count" id="guestIntroCount{{$index}}">0/40</span>
+									</div>
+								</div>
+							</div>
+							<!--<div class="di-intro-trash" >
+                                <span ng-show="diIntroTrash"><i class="fa fa-trash" aria-hidden="true"></i></span>
+                            </div>-->
+						</div>
+					</div>
+					<a class="di-form-addSubTitle" ng-click="addGuests()">+ 添加嘉宾</a>
+				</div>
+				<!--赞助商介绍板块-->
+				<div class="di-event-pic" ng-show="diSponsorIntro">
+					<label class="di-title-text">赞助商介绍：</label>
+					<div id="space-for-sponsor">
+						<div class="di-intro-container" ng-repeat="sponsor in sponsors track by $index">
+							<div class="di-intro-pic">
+								<input type="file" name="sponsorFile{{$index}}" id="sponsorFile{{$index}}" class="di-uploadimg" sponsor-on-change="uploadSponsorFile"
+									ng-model="detailInfo.sponsorImg" />
+								<label for="sponsorFile{{$index}}"><img id="sponsorImg{{$index}}" src="/../../../images/postEventImg/detailedInfoImg/di-event-pic.png" alt="your image" /><span class="di-lable4">添加图片</span></label>
+							</div>
+
+							<div class="di-sponsor-content">
+								<input type="text" class="di-input-active di-input-inactive" name="eventSponsor{{$index}}" id="eventSponsor{{$index}}" ng-model="detailInfo.sponsors[$index]"
+									maxlength="20" required placeholder="赞助商名称">
+								<div class="bi-word-container2">
+									<span class="bi-word-count" id="sponsorCount{{$index}}">0/20</span>
+								</div>
+							</div>
+							<!--<div class="di-intro-trash" >
+                                <span ng-show="diIntroTrash"><i class="fa fa-trash" aria-hidden="true"></i></span>
+                            </div>-->
+						</div>
+					</div>
+					<a class="di-form-addSubTitle" ng-click="addSponsors()">+ 添加赞助商</a>
+				</div>
+				<!--活动注意事项板块-->
+				<div class="di-sec-process" ng-show="diTips">
+					<label class="di-title-text">注意事项：</label>
+					<textarea froala="froalaOptions" ng-model="myTips" class="di-process-text"></textarea>
+				</div>
+				<!--活动优惠折扣板块-->
+				<div ng-show="diEventPromo">
+					<label for="eventTitle" class="bi-title-text">优惠折扣:</label><br>
+					<div class="di-event-name">
+						<input type="text" class='di-promo-active di-promo-inactive ' name="promo" id="promo" ng-model="detailInfo.promo" maxlength="20"
+							required placeholder="折扣条件描述">
+						<div class="bi-word-container">
+							<span class="bi-word-count">{{promoNum}}/20</span>
+						</div>
+					</div>
+
+					
+					<div>
+						<label class="bi-title-text">折扣力度:&nbsp;&nbsp;</label>
+						<input type="text" class="bi-input-active bi-input-inactive bi-input-width-override1">&nbsp;<span class="bi-title-text">× 原价</span>						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label class="bi-title-text">折扣有效期至活动开始前:&nbsp;&nbsp;</label>
+						<input type="text" class="bi-input-active bi-input-inactive bi-input-width-override1">&nbsp;<span class="bi-title-text">天</span>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="post-event-btn2">
+				<button type="submit" class="post-event-btn-save">保存</button>&nbsp;&nbsp;
+				<button type="" class="post-event-btn-next">上一步</button>&nbsp;&nbsp;
+				<button type="" class="post-event-btn-next" ng-click="$ctrl.open()">完成并预览</button>
+			</div>
+
+		</form>
+	</div>
+	<!--右边栏结束-->
+</div>
+
+<script type="text/ng-template" id="eventSubmit.html">
+        
+        <h3 class="di-submit-popup">恭喜您，已成功发布了活动！</h3>
+        
+        <div class="event-share-popup" id="modal-body">
+            
+			<div class="event-group-qr">
+				<p class="di-popup-label1">扫描二维码</p>
+				<p class="di-popup-label2">进入活动专属微信群</p>
+				<img ng-src="{{$ctrl.groupQR}}" alt="groupQRCode" class="di-qr-img">
+			</div>
+			
+			<div class="event-share-qr">
+				<p class="di-popup-label1">扫描二维码</p>
+				<p class="di-popup-label2">分享给好友或朋友圈</p>
+				<img ng-src="{{$ctrl.shareQR}}" alt="shareQRCode" class="di-qr-img">
+			</div>
+			
+        </div>
+        <div class="modal-footer">
+            <button class="btn event-popup-btn" type="button" ng-click="$ctrl.ok()"> <span class="event-popup-btn-text">前往活动详情页</span></button>            
+        </div>
+    </script>

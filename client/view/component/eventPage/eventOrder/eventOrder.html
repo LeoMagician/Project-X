@@ -1,0 +1,11 @@
+<div class="eventOrder">
+    <table>
+        <tr>
+            <td class="eventOrderType"><span class="orderTypeFont">默认顺序</span></td>
+            <td ng-class="orderByDate" ng-click="changeClass('date')"><span class="orderTypeFont">活动时间</span><div ng-class="orderByDateIcon"></div></td>
+            <td ng-class="orderByPrice" ng-click="changeClass('price')"><span class="orderTypeFont">人均价格</span><div ng-class="orderByPriceIcon"></div></td>
+            <td ng-class="orderByHot" ng-click="changeClass('hot')"><span class="orderTypeFont">收藏人气</span><div ng-class="orderByHotIcon"></div></td>
+            <td class="eventSearchResult"><span class="orderTypeFont">为您找到{{$parent.filtered.length}}个活动</span></td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,20 @@
+<div class="specialEventPill">
+    <table class="specialPillTable">
+       <tr>
+           <td colspan="2"><div  class="specialEventType" ng-class="{localEvent:pill.specialType==='local',hittedEvent:pill.specialType==='hitted'}">
+               <span class="specialEventTypeFont">{{specialType}}</span></div>
+           </td>
+       </tr>
+       <tr>
+           <td class="specialEventTimeSection"><event-time pill='pill'></event-time></td>
+           <td class="specialEventImgSection"><event-image pill='pill'></event-image><td>
+       </tr>
+       <tr>
+           <td colspan="2">
+                <div class="specialEventTitle">
+                <event-title pill='pill'></event-title>
+                </div>
+           </td>
+       </tr>
+    </table>
+</div>

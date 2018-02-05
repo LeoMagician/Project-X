@@ -1,0 +1,11 @@
+<div class="normalEventPill">
+    <table class="pillTable">
+        <tr>
+             <td class="normalEventImgSection"><event-image pill='pill' ng-click="go('/eventDetail/'+pill.eventId)"></event-image></td>
+             <td rowspan="2"><event-details pill="pill"></event-details></td>
+        </tr>
+        <tr>
+             <td class="normalEventTimeSection" ><event-time pill='pill' ng-click="go('/eventDetail/'+pill.eventId)"></event-time></td>
+        </tr>
+    </table>
+</div>

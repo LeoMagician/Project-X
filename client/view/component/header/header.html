@@ -1,0 +1,28 @@
+<div class="appHeaderSection">
+    <div class="logoIconSection">
+        <div class="logoIcon">
+    </div>
+    </div>
+    <div class="searchIconSection">
+        <input type="image" src="../images/icons/search_icon.png" ng-click="search()"/>
+    </div>
+    <div class="searchTextFieldSection">
+        <input type="text" class="searchTextField" placeholder="输入活动关键词，开始搜索" ng-model="searchText"/>
+    </div>
+    <div class="eventPageButtonSection" ng-class="{headerButtonActive:isActive('/eventPage')}">
+        <span class="exploreButtonFont" ng-link="['EventPage']" ng-class="{headerButtonActivefont:isActive('/eventPage')}">探索活动</span>
+    </div>
+    <div class="postPageButtonSection" ng-class="{headerButtonActive:isActive('/postEvent')}">
+        <span class="postButtonFont" ng-link="['PostEvent']" ng-class="{headerButtonActivefont:isActive('/postEvent')}">发布活动</span>
+    </div>
+    <div class="headerSplitSection">
+    </div>
+    <div class="headerProfileImageSection">
+        <input type="image" src="../images/testimg/user_profile_icon.png" />
+    </div>
+    <div class="headerProfileNickNameSection">
+        <span class="headerProfileNickNameFont">username1</span>
+    </div>
+    <div class="headerSearchResultSection" ng-class="{showSearchResult:showResult}">
+    </div>
+</div>

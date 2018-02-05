@@ -1,0 +1,386 @@
+/* -------------Event post page-------------- */
+
+.post-process-container {
+    background-image: url('../../images/postEventImg/topbar/top-bar-bg.png');
+    background-repeat: no-repeat;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px 0px rgba(221, 221, 221, 0.50);
+    border-radius: 5px;
+    width: 1180px;
+    height: 170px;
+}
+
+.process-flex-container {
+    width: 924px;
+    height: 102px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-event-title {
+    width: 152px;
+    height: 26px;
+    font-family: PingFangSC-Semibold;
+    font-size: 21px;
+    color: #3b3b3b;
+    letter-spacing: 1.18px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.basic-icon-item {
+    height: 102px;
+    width: 123px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.separate-line {
+    background-image: url('../../images/postEventImg/topbar/separate-line.png');
+    background-repeat: no-repeat;
+    width: 338px;
+    height: 2px;
+    margin-top: 39px;
+    margin-bottom: auto;
+}
+
+.basic-icon-active {
+    background-image: url('../../images/postEventImg/topbar/basic-icon-active.png');
+    background-repeat: no-repeat;
+    background: #20c4c8;
+    border: 3px solid #20c4c8;
+    width: 57px;
+    height: 57px;
+    border-radius: 100%;
+    font-family: PingFangSC-Semibold;
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 1.18px;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.basic-icon-inactive {
+    background-image: url('../../images/postEventImg/topbar/basic-icon-inactive.png');
+    background-repeat: no-repeat;
+}
+
+.basic-text {
+    height: 16px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3b3b3b;
+    letter-spacing: 0.68px;
+    text-align: left;
+    align-self: flex-end;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+/* -----------------Basic info context---------------------*/
+
+.basic-info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    height: 569px;
+    margin-top: 20px;
+}
+
+.basic-info-sidebar-bg {
+    background-image: url('../../images/postEventImg/basicInfoImg/side-bar-bg.png');
+    background-repeat: no-repeat;
+    /*background: rgba(255, 255, 255, 0.55);*/
+    background: #ffffff;
+    box-shadow: 0px 2px 8px 0px rgba(221, 221, 221, 0.50);
+    border-radius: 5px;
+    width: 380px;
+    height: 569px;
+}
+
+.basic-info-sidebar-pic {
+    background-image: url('../../images/postEventImg/basicInfoImg/side-bar-pic.png');
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 459px;
+    margin-top: 55px;
+    display: flex;
+}
+
+.text-area-hint {
+    background: #ffffff;
+    border: 2px solid #dbdbdb;
+    border-radius: 5px;
+    resize: none;
+    width: 276px;
+    height: 96px;
+    margin-left: 95px;
+    margin-top: 45px;
+}
+
+.text-area-words {
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #dbdbdb;
+    letter-spacing: 0.59px;
+    text-align: left;
+    margin-left: 11px;
+    margin-top: 9px;
+}
+
+.icon-lightbull {
+    background-image: url('../../images/postEventImg/basicInfoImg/side-bar-lightbull.png');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 32px;
+    margin-left: 11px;
+    margin-top: 9px;
+}
+
+.basic-info-main {
+    background-image: url('../../images/postEventImg/basicInfoImg/main-context-bg.png');
+    background-repeat: no-repeat;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px 0px rgba(221, 221, 221, 0.50);
+    border-radius: 5px;
+    width: 780px;
+    height: 569px;
+}
+
+.bi-form-title {
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #3b3b3b;
+    letter-spacing: 0.88px;
+    text-align: left;
+    margin-left: 330px;
+    margin-right: auto;
+    margin-top: 26px;
+}
+
+.bi-form-addSubTitle {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #20c4c8;
+    letter-spacing: -0.01px;
+    text-align: left;
+    /*padding-left: 20px;*/
+    position: absolute;
+    margin-left: 590px;
+    align-self: flex-end;
+    text-decoration: underline;
+}
+
+.basic-info-form {
+    margin-left: 41px;
+    margin-top: 30px;
+}
+
+.bi-title-text {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #3b3b3b;
+    letter-spacing: 0.78px;
+    text-align: left;
+}
+
+.bi-event-name {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+    height: auto;
+    margin-bottom: 29px;
+}
+
+input.bi-input-active:focus {
+    outline: none;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: #20c4c8;
+    box-shadow: 0 9px 15px -6px rgba(221, 221, 221, 0.50);
+    ;
+    width: 563px;
+    height: 40px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.bi-input-inactive {
+    outline: none;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: #dbdbdb;
+    width: 563px;
+    height: 40px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.bi-word-container {
+    display: inline-block;
+    align-self: flex-end;
+    margin-left: -40px;
+    width: 38px;
+}
+
+.bi-word-count {
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #dbdbdb;
+    letter-spacing: 0.59px;
+    text-align: right;
+    float: right;
+}
+
+
+.bi-event-time {
+    display: flex;
+    width: 660px;
+    height: auto;
+}
+
+.cal-input-box {
+    width: 172px;
+    height: 40px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.cal-input-icon {
+    background-image: url(../../images/postEventImg/basicInfoImg/cal-input-cion.png);
+    background-repeat: no-repeat;
+    position: relative;   
+    left: 2px;    
+    display: inline-block;    
+    width: 40px;
+    height: 37px;
+}
+
+.cal-input-btn {
+    height: 40px;
+    padding: 0;
+}
+
+.cal-table-container {
+    width: 250px;
+    height: 219px;
+    /*outline: none;*/
+}
+
+.cal-table {
+    width: 230px;
+    margin: auto;
+}
+
+.cal-btn {
+    /*padding: 0;*/
+    border: none;
+}
+
+.cal-btn.btn.btn-default.btn-sm:focus {
+    border: none;
+    outline: none;
+}
+
+.uib-daypicker {
+    outline: none;
+}
+
+.cal-pre-btn {
+    color: #d5e1eb;
+}
+
+.cal-btn-noborder {
+    outline: none;
+}
+
+.cal-next-btn {
+    color: #d5e1eb;
+}
+
+.text-info {
+    color: #317084;
+    font-weight: bold;
+}
+
+.btn-sm {
+    padding: 7px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 100%;
+}
+
+.btn-default.active {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+    border-radius: 100%;
+}
+
+.btn-info.active {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+    border-radius: 100%;
+}
+
+.cal-breakline {
+    border-bottom: 1px solid #97b3ce;
+    opacity: 0.4;
+    height: 32px;
+}
+
+.cal-weel-col {
+    height: 27px;
+    vertical-align: bottom;
+}
+
+
+/*-----------Place holder style-------------*/
+
+::-webkit-input-placeholder {
+    /* Chrome */
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #dbdbdb;
+    letter-spacing: 0.59px;
+    text-align: left;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #dbdbdb;
+    letter-spacing: 0.59px;
+    text-align: left;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #dbdbdb;
+    letter-spacing: 0.59px;
+    text-align: left;
+}
+
+:-moz-placeholder {
+    /* Firefox 4 - 18 */
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #dbdbdb;
+    letter-spacing: 0.59px;
+    text-align: left;
+}

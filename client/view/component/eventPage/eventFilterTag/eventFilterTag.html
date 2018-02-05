@@ -1,0 +1,15 @@
+<div>
+    <div ng-repeat="cri in criteria" class="eventFilterTagSection">
+        <div class="eventFilterTag" ng-class="{'eventFilterTimeTag': cri.name == 'date' }">
+            <table>
+                <tr>
+                    <td class="filterTagValueSection"><span class="filterTagValueFont">{{cri.value}}</span>
+                    </td>
+                    <td class="filterDeleteIconSectionTd"><div class="filterDeleteIconSection filterDeleteIcon" ng-click="removeFilterTag(cri)"
+                    ng-class="{'filterTimeDeleteIconSection': cri.name == 'date' }" ></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

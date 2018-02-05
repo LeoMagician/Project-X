@@ -1,0 +1,24 @@
+<div class="normalEventTitle">
+    <event-title pill='pill'></event-title>
+</div>
+<div class="normalEventDetailsBoarder">
+<div ng-click="go('/eventDetail/'+pill.eventId)" class="event-tags-des-section">
+    <div class="normalEventTag">
+        <span ng-repeat="tag in pill.tags"><event-tag tag='tag' pill='pill'></event-tag></span>
+    </div>
+    <div class="normalEventDescription">
+        <span class="eventDescription">{{pill.description}}</span>
+    </div>
+    <div class="normalEventPublisherStars">
+        <div class="eventPublisherImg">
+            <img ng-src="images/testimg/user_test1.png" />
+        </div>
+        <div class="eventPublisherSection">
+            <span class="eventPublisher">{{pill.organization}}</span>
+        </div>
+        <div class="startSection showBlankStarIcon" ng-repeat="t in getBlankStars() track by $index">
+        </div>
+        <div class="startSection showStarIcon" ng-repeat="t in getStars() track by $index">
+        </div> 
+    </div>
+</div>

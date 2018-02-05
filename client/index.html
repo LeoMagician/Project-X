@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+		<base href="/" />
+		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/node_modules/timepicker/jquery.timepicker.css">
+		<!-- Include font-awesome icon style. -->
+		<link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+		<!-- Include Editor Plugins style. -->
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/froala_editor.min.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/froala_style.min.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/char_counter.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/code_view.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/colors.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/emoticons.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/file.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/fullscreen.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/image.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/image_manager.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/line_breaker.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/quick_insert.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/table.css">
+		<link rel="stylesheet" href="/bower_components/froala-wysiwyg-editor/css/plugins/video.css">
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script type='text/javascript' src='/bower_components/froala-wysiwyg-editor/js/froala_editor.min.js'></script>
+		<script src="/bower_components/froala-wysiwyg-editor/js/languages/zh_cn.js"></script>
+		<script src="/node_modules/timepicker/jquery.timepicker.min.js"></script>
+		<script src="/bower_components/datepair.js/dist/datepair.js"></script>
+		<script src="/bower_components/datepair.js/dist/jquery.datepair.min.js"></script>
+		<script src="/bower_components/angular/angular.js"></script>
+		<script src="/bower_components/angular-i18n/angular-locale_zh-cn.js"></script>
+		<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="/bower_components/angular-route/angular-route.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/prefix/eventpoststyle.css">
+
+		<script src="/view/component/header/header.js"></script>
+		<script src="app.js"></script>
+		<script src="/view/component/homePage/homePage.js"></script>
+		<script src="/view/animation/sticky.js"></script>
+		<script src="/view/animation/stank.js"></script>
+		<script src="/view/animation/headerSticky.js"></script>
+		<script src="/view/animation/eventSideSticky.js"></script>
+		<script src="/view/component/util/location/locations.js"></script>
+		<script src="/view/component/eventPage/eventFilterTag/eventFilterTag.js"></script>
+		<script src="/view/component/eventPage/eventFilter/eventFilter.js"></script>
+		<script src="/view/component/eventPage/eventOrder/eventOrder.js"></script>
+		<script src="/view/component/eventPage/eventPill/specialEvent/specialEvent.js"></script>
+		<script src="/view/component/eventPage/eventPill/eventTag/eventTag.js"></script>
+		<script src="/view/component/eventPage/eventPill/eventTitle/eventTitle.js"></script>
+		<script src="/view/component/eventPage/eventPill/eventDetails/eventDetails.js"></script>
+		<script src="/view/component/eventPage/eventPill/eventTime/eventTime.js"></script>
+		<script src="/view/component/eventPage/eventPill/eventImage/eventImage.js"></script>
+		<script src="/view/component/eventPage/eventPill/eventPill.js"></script>
+		<script src="/view/component/eventPage/eventPage.js"></script>
+		<script src="https://npmcdn.com/@angular/router@0.2.0/angular1/angular_1_router.js"></script>
+
+		<script src="/view/component/postEvent/postEvent.js"></script>
+		<script src="/view/component/postEvent/basicInfo/basicInfo.js"></script>
+		<script src="/view/component/postEvent/coreDescription/coreDescription.js"></script>
+		<script src="/view/component/postEvent/detailedInfo/detailedInfo.js"></script>
+		<script src="/view/component/util/calendar/calendar.module.js"></script>
+		<script src="/bower_components/angular-froala/src/angular-froala.js"></script>
+		<!-- Include Plugins. -->
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/align.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/char_counter.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/code_beautifier.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/code_view.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/colors.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/draggable.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/emoticons.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/entities.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/file.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/font_family.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/font_size.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/fullscreen.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/image.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/image_manager.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/inline_style.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/line_breaker.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/link.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/lists.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/paragraph_format.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/paragraph_style.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/quick_insert.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/quote.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/table.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/save.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/url.min.js"></script>
+		<script type="text/javascript" src="/bower_components/froala-wysiwyg-editor/js/plugins/video.min.js"></script>
+		<!--<script src="/view/component/util/calendar/calendar.dayPick.module.js"></script>-->
+
+		<script src="/view/component/footer/footer.js"></script>
+		<script type="text/javascript" src="/bower_components/jquery-qrcode-master/src/jquery.qrcode.js"></script>
+		<script type="text/javascript" src="/bower_components/jquery-qrcode-master/src/qrcode.js"></script>
+
+		<script src="/view/component/eventDetailPage/eventDetailPage.js"></script>
+		<script src="/view/service/navigation.service.js"></script>
+		<script src="/view/service/regular.expression.service.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=tKsyx2DGTviH2eXG13BUeyAc1uXdsN6y"></script>
+  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body ng-app="app" onload="window.resizeTo(500,500)" class="appContentEvent">
+	<page-header></page-header>
+	<app class="appContentSection"></app>
+	<page-footer></page-footer>
+</body>
+
+
+</html>

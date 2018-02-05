@@ -1,0 +1,277 @@
+<div class="eventDetailPageWraper">
+    <!--背景图片板块-->
+    <div class="backgroundImageSection">
+        <img ng-src="images/testimg/eventBackgroundImage2.jpg" class="eventBackgroundImage"/>
+    </div>
+    <!--信息板块-->
+    <div class="event-info-section"> 
+        <!--首要信息板块-->
+        <div class="eventMainInfoSection" id="eventMain">
+            <!--标题-->
+            <div class="event-main-info-title-section">
+                <span class="event-main-info-title-font">{{data.title}}</span>
+            </div>
+            <!--小标题-->
+            <div class="event-main-info-subtitle-section">
+                <span class="event-main-info-subtitle-font">{{data.subTitle}}</span>
+            </div>
+            <!--分割行-->
+            <div class="event-main-info-split-section">
+            </div>
+            <!--活动描述板块-->
+            <div class="event-main-info-description-section">
+                <span class="event-main-info-description-font">{{data.description}}</span>
+            </div>
+            <!--活动时间板块-->
+            <div class="event-main-info-time-section">
+                <span class="event-main-info-label-font">活动时间：</span>
+            </div>
+            <!--活动地点板块-->
+            <div class="event-main-info-location-section">
+                <span class="event-main-info-label-font">活动地点：</span>
+                <span class="event-main-info-content-font">{{data.province}}</span>
+                <span class="event-main-info-content-font">{{data.city}}</span>
+            </div>
+            <!--活动标签板块-->
+            <div class="event-main-info-tags-section">
+                <span class="event-main-info-label-font">活动标签：</span>
+                <span ng-repeat="tag in data.tags"><event-tag tag='tag'></event-tag></span>
+            </div>
+        </div>
+        <!--活动具体信息板块-->
+        <div class="event-detial-info-section" id="eventDetail">
+            <div class="event-detail-info-label-section">
+                <span class="event-datial-info-label-font">活动详情</span>
+            </div>
+            <!--活动详情板块-->
+            <div class="event-detail-info-partial-section">
+                <div class="event-detail-info-partial-label-section">
+                    <div class="event-detail-info-partial-split-section"></div>
+                    <span class="event-detail-info-partial-label-font">流程细节</span>
+                </div>
+                <div class="event-detail-info-partial-content-section">
+                    <span class="event-detial-info-partial-content-font event-detial-info-partial-process"></span>
+                </div>
+            </div>
+            <!--活动参与人板块-->
+            <div class="event-detail-info-partial-section" ng-show="participant">
+                <div class="event-detail-info-partial-label-section">
+                    <div class="event-detail-info-partial-split-section"></div>
+                    <span class="event-detail-info-partial-label-font">活动参与人</span>
+                </div>
+                <div class="event-detail-info-partial-content-section">
+                    <span class="event-detial-info-partial-content-font event-detial-info-partial-participant"></span>
+                </div>
+            </div>
+            <!--活动嘉宾版块-->
+            <div class="event-detail-info-partial-section" ng-show="guests">
+                <div class="event-detail-info-partial-label-section">
+                    <div class="event-detail-info-partial-split-section"></div>
+                    <span class="event-detail-info-partial-label-font">嘉宾介绍</span>
+                </div>
+                <div class="event-detail-info-partial-content-section">
+                        <div ng-repeat="guest in data.detail.guests" class="event-detail-info-partial-guest-section">
+                            <div class="event-detail-info-partial-guest-img-section">
+                                <img ng-src="{{guest.guestImg}}" class="event-detail-guest-img"/>
+                            </div>
+                            <div class="event-detial-info-partial-guest-intro-section">
+                                <div class="event-detial-info-partial-guest-name">
+                                    <span class="event-detial-info-partial-guest-name-font">{{guest.guestName}}</span>
+                                </div>
+                                    <br />
+                                <div class="event-detial-info-partial-guest-intro">
+                                    <span class="event-detial-info-partial-guest-intro-font ">{{guest.guestIntro}}</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!--活动赞助商版块-->
+            <div class="event-detail-info-partial-section" ng-show="sponsors">
+                <div class="event-detail-info-partial-label-section">
+                    <div class="event-detail-info-partial-split-section"></div>
+                    <span class="event-detail-info-partial-label-font">赞助商介绍</span>
+                </div>
+                <div class="event-detail-info-partial-content-section">
+                        <div ng-repeat="sponsor in data.detail.sponsors" class="event-detail-info-partial-sponsor-section">
+                            <table class="event-detail-partial-sponsor-table">
+                                <tr>
+                                    <td>
+                                    <div class="event-detial-info-partial-sponsors-img-section">
+                                        <img ng-src="{{sponsor.sponsorImg}}" class="event-detail-sponsor-img"/>
+                                    </div>
+                                    </td>
+                                    <td>
+                                    <div class="event-detial-info-partial-sponsors-intro-section">
+                                        <span class="event-detail-info-partial-sponsors-intro-font">{{sponsor.sponsorName}}</span>
+                                    </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+            </div>
+            <!--注意事项板块-->
+            <div class="event-detail-info-partial-section" ng-show="notice">
+                <div class="event-detail-info-partial-label-section">
+                    <div class="event-detail-info-partial-split-section"></div>
+                    <span class="event-detail-info-partial-label-font">注意事项</span>
+                </div>
+                <div class="event-detail-info-partial-content-section">
+                    <span class="event-detial-info-partial-content-font event-detial-info-partial-notice"></span>
+                </div>
+            </div>
+            <!--优惠和折扣板块-->
+            <div class="event-detail-info-partial-section" ng-show="discount">
+                <div class="event-detail-info-partial-label-section">
+                    <div class="event-detail-info-partial-split-section"></div>
+                    <span class="event-detail-info-partial-label-font">优惠和折扣</span>
+                </div>
+                <div class="event-detail-info-partial-content-section">
+                    <span class="event-detial-info-partial-content-font event-detial-info-partial-discount"></span>
+                    <br />
+                    <span class="event-detial-info-partial-content-font">优惠码：</span>
+                    <span class="event-detial-info-partial-content-discountNum-font event-detial-info-partial-discountNum"></span>
+                </div>
+            </div>
+        </div>
+        <!--活动地点信息板块-->
+        <div class="event-location-info-section" id="eventMap">
+            <div class="event-detail-info-label-section">
+                <span class="event-datial-info-label-font">活动地图</span>
+            </div>
+            <!--活动地点-->
+            <div class="event-detail-location-section" align="center">
+                <div class="event-detail-location">
+                    <span class="event-detail-location-font">{{data.province}}.{{data.city}}</span>
+                </div>
+                <div class="event-detail-location">
+                    <span class="event-detail-location-font">{{data.location}}</span>
+                </div>
+            </div>
+            <!--活动地图-->
+            <div class="event-detail-location-map-section" id="container">
+            </div>
+        </div>
+    </div>
+    <!--活动互动板块-->
+    <div class="event-interaction-section test" event-side-sticky>
+        <!--活动报名板块-->
+        <div class="event-apply-section">
+            <div class="event-apply-table-section">
+                <table class="event-apply-table">
+                    <tr class="event-apply-table-tr">
+                        <td class="event-apply-table-font">门票价格：
+                        </td>
+                        <td class="event-apply-table-font">¥{{data.price}} /人
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="event-apply-table-font">人数：
+                        </td>
+                        <td><input type="text" class="event-apply-spinner-textfield" readonly="readonly" ng-model="count"/>
+                            <div class="event-apply-spinner-up upIcon" ng-click="changeNumber(true)"></div>
+                            <div class="event-apply-spinner-down downIcon" ng-click="changeNumber(false)"></div>
+                            <span class="event-apply-left-font">(剩余201人)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="event-apply-table-font">总价：
+                        </td>
+                        <td class="event-apply-table-font">¥{{data.price*count}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="event-apply-button-section" ng-click="apply()">
+                <span class="event-apply-button-font">我要报名</span>
+            </div>
+            <!--活动申请分割板块-->
+            <div class="event-apply-split-section">
+            </div>
+            <!--活动分享收藏板块-->
+            <div class="event-apply-like-section" ng-class="shareButton">
+                <div ng-class="like" ng-click="changeClass()" class="event-apply-like"></div>
+                <div class="event-apply-like-label">
+                    <span class="event-detial-info-partial-content-font">加入收藏</span>
+                </div>
+            </div>
+            <!--活动分享板块-->
+            <div class="event-apply-share-section" ng-click="runShareEffect()" ng-class="shareButton">
+                <div class="event-apply-share-icon showShareIcon"></div>
+                <div class="event-apply-share-text">
+                    <span class="event-detial-info-partial-content-font">分享</span>
+                </div>
+            </div>
+            <div class="event-apply-share-hidden-section" id="shareEffect">
+                <div class="event-apply-share-hidden-icon showShareIcon"></div>
+                <div class="event-apply-share-split"></div>
+                <div class="weiboIcon apply-icon-wraper" ng-click="test()"></div>
+                <div class="wechatIcon apply-icon-wraper"></div>
+                <div class="wechatFriendsIcon apply-icon-wraper"></div>
+                <div class="wechatBookmarkIcon apply-icon-wraper"></div>
+                <div class="removeShareIcon apply-remove-icon-wraper" ng-click="runShareEffect()"></div>
+            </div>
+        </div>
+        <!--活动组织人板块-->
+        <div class="event-organizor-section">
+            <div class="event-organizor-info-section">
+                <div class="event-organizor-img-section">
+                    <img ng-src="images/testimg/team_icon.png" class="event-organizor-img"/>
+                </div>
+                <div class="event-organizor-name-section">
+                    <table class="event-organizor-table">
+                        <tr>
+                            <td class="event-organizor-font">{{data.organization}}</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="event-start-section showStarIcon" ng-repeat="t in getStars() track by $index">
+                                </div> 
+                                <div class="event-start-section showBlankStarIcon" ng-repeat="t in getBlankStars() track by $index">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="event-organizor-split-verizontal-section">
+                </div>
+                <div class="event-organizor-posted-section">
+                    <table>
+                        <tr>
+                            <td class="event-organizor-posted-font">已办</td>
+                        </tr>
+                        <tr>
+                            <td class="event-organizor-posted-font">
+                               238
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="event-organizor-horizontal-section">
+            </div>
+            <div class="event-organizor-link-section">
+                <span class="event-organizor-link-font">查看主页</span>
+            </div>
+        </div>
+    </div>
+    <div class="event-navi-section" id="eventHeader" header-sticky>
+        <table class="event-navi-table">
+            <tr>
+                <td><span class="event-navi-font" ng-click="navigate('eventMain')">基本信息</span>
+                <div class="event-navi-current" id="main">
+                </td>
+                <td><span class="event-navi-font" ng-click="navigate('eventDetail')">活动详情</span>
+                <div class="event-navi-current" id="detail">
+                </td>
+                <td><span class="event-navi-font" ng-click="navigate('eventMap')">活动地图</span>
+                <div class="event-navi-current" id="map">
+                </td>
+            </tr>
+        </table>
+        <div class="event-navi-title-section">
+            <span class="event-navi-title-font">{{data.title}}</span>
+        </div>
+    </div>
+</div>

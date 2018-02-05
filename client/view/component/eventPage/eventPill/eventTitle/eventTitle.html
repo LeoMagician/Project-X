@@ -1,0 +1,13 @@
+<div ng-click="go('/eventDetail/'+pill.eventId)"
+ ng-class="{eventTileSubtitleSection:pill.normal}">
+    <div class="eventTitleSection">
+        <span ng-class="{normalEventTitle:pill.normal,specialEventTitle:pill.special}">{{pill.title}}</span>
+    </div>
+    <div class="eventSubTitleSection">
+        <span class="eventSubTitle">{{pill.subTitle}}</span>
+    </div>
+</div>
+<div ng-class="{likeLocation:pill.normal,specialLikeLocaion:!pill.normal}">
+    <div ng-class="like" ng-click="changeClass()"></div>
+</div>
+

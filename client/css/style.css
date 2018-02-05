@@ -1,0 +1,2042 @@
+.appContentEvent {
+    background-color: #f8f8f8; 
+}
+/******  Event Page Pill Section   ******/
+.normalEventPill {
+    background-color:#ffffff;
+    box-shadow:0px 1px 9px 0px rgba(177,177,177,0.50);
+    border-radius:5px;
+    width:100%;
+    height:280px;
+    display: table;
+    margin-top : 20px;
+}
+
+.normalEvent {
+    float: left;
+    width: 691px;
+    position: relative;
+    left: 115px;
+}
+.specialEvent {
+    width: 333px;
+    position: relative;
+    left: 134px;
+    float:left;
+}
+
+/******  Event Page Pill Image Section   ******/
+.normalEventImgSection {
+    width:40%;
+    height:205px;
+    display: table-cell;
+}
+.normalEventImg {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    object-fit: cover;
+}
+
+.normalEventPill table, tr, td {
+   border-collapse: collapse;
+   padding: 0px;
+}
+
+.specialEventImgSection {
+    width: 100%;
+    height: 177px;
+
+}
+
+/******  Event Page Pill Time Section   ******/
+.normalEventTimeSection {
+    background-color:#f2f2f2;
+    width:100%;
+    height:75px;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.normalEventTL {
+    display: inline-block;
+    position: relative;
+    top: 14px;
+    left: 4%;
+    width: 80px;
+}
+.normalEventTime {
+    font-family:PingFangSC-Regular;
+    font-size:16px;
+    color:#555555;
+    letter-spacing:1.08px;
+    text-align:left;
+    display: block;
+}
+
+.timeTableRow tr{
+    margin-bottom: 4px;
+}
+
+.normalEventLocation {
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#9f9f9f;
+    letter-spacing:0.68px;
+    text-align:left;
+}
+
+.normalEventBoarder {
+    position: relative;
+    top:20px;
+    left: 13%;
+    border-left:1px solid #d5d5d5;
+    width:1px;
+    height:39px;
+    display: inline-block;
+}
+
+.normalEventCostAttendency {
+    width: 38%;
+    height: 39px;
+    float: right;
+    position: relative;
+    right: 4%;
+    top: 18px;
+}
+
+
+.showDollarLabel {
+    font-family:PingFangSC-Regular;
+    font-size:10px;
+    color:#9f9f9f;
+    letter-spacing:0.59px;
+    text-align:left;
+}
+
+/******  Event Page Icon ******/
+.showLocationIcon {
+    background-image: url('../images/icons/location_icon.png');
+    background-repeat: no-repeat;
+    width:22px;
+    height:26px;
+    position: relative;
+    left: 4%;
+    top: 12px;
+    display: inline-block;
+}
+
+.hideLocationIcon {
+    display: none;
+}
+
+.showDollarIcon {
+    background-image: url('../images/icons/dollar_icon.png');
+    background-repeat: no-repeat;
+    width:18px;
+    height:15px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.showAttendencyIcon {
+    background-image: url('../images/icons/attendency_icon.png');
+    background-repeat: no-repeat;
+    width:18px;
+    height:18px;
+}
+
+.showUnlikeIcon {
+    background-image: url('../images/icons/unlike_icon.png');
+    background-repeat: no-repeat;
+    width:32px;
+    height:28px;
+}
+
+.showLikeIcon {
+    background-image: url('../images/icons/like_icon.png');
+    background-repeat: no-repeat;
+    width:32px;
+    height:28px;
+    
+}
+
+.showFavoriteIcon {
+    background-image: url('../images/icons/favorite_icon.png');
+    background-repeat: no-repeat;
+}
+
+.showFavoriteClickedIcon {
+    background-image: url('../images/icons/favorite_clicked_icon.png');
+    background-repeat: no-repeat;
+}
+
+.showShareIcon {
+    background-image: url('../images/icons/share_button_icon.png');
+    background-repeat: no-repeat;
+}
+
+.showStarIcon {
+    background-image: url('../images/icons/star_icon.png');
+    background-repeat: no-repeat;
+    width:18px;
+    height:18px;
+}
+
+.showBlankStarIcon {
+    background-image: url('../images/icons/blank_star_icon.png');
+    background-repeat: no-repeat;
+    width:18px;
+    height:18px;
+}
+
+.orderByIcon {
+    background-image: url('../images/icons/orderBy_icon.png');
+    background-repeat: no-repeat;
+    width: 7px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.orderByIconSelected{
+    background-image: url('../images/icons/orderBy_seleccted_icon.png');
+    background-repeat: no-repeat;
+    width: 7px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.radioButtonIcon {
+    background-image: url('../images/icons/radioButton_icon.png');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.radioButtonIconSelected {
+    background-image: url('../images/icons/radioButtonSelected_icon.png');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.filterDeleteIcon {
+    background-image: url('../images/icons/filterDelete_icon.png');
+    background-repeat: no-repeat;
+}
+
+.event-calender-icon {
+    background-image: url('../images/icons/event_calender_icon.png');
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+}
+
+.logoIcon {
+    background-image: url('../images/icons/logo_icon.png');
+    background-repeat: no-repeat;
+    width: 96px;
+    height: 24px;
+}
+
+.searchButtonIcon {
+    background-image: url('../images/icons/search_icon.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 25px;
+}
+
+.wechatIcon {
+    background-image: url('../images/icons/icon_微信.png');
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 31px;
+    background-size: 31px 31px;
+}
+
+.wechatBookmarkIcon {
+    background-image: url('../images/icons/icon_微信收藏.png');
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 31px;
+    background-size: 31px 31px;
+}
+
+.wechatFriendsIcon {
+    background-image: url('../images/icons/icon_朋友圈.png');
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 31px;
+    background-size: 31px 31px;
+}
+
+.weiboIcon {
+    background-image: url('../images/icons/icon_新浪微博.png');
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 31px;
+    background-size: 31px 31px;
+}
+
+.removeShareIcon {
+    background-image: url('../images/icons/close_icon.png');
+    background-repeat: no-repeat;
+}
+
+.upIcon {
+    background-image: url('../images/icons/updown_up.png');
+    background-repeat: no-repeat;
+}
+
+.downIcon {
+    background-image: url('../images/icons/updown_down.png');
+    background-repeat: no-repeat;
+}
+
+/******    Event Detail Section    ******/
+.eventDetails {
+    display: inline;
+    padding:0px;
+    margin:0px;
+}
+
+.pillTable tr {
+    vertical-align: top;
+}
+
+.normalEventTitle {
+    position: relative;
+    top: 18px;
+    display: block; 
+    height: 45px;
+}
+
+.eventTitleSection {
+    float: left;
+    clear: right;
+    position: relative;
+    left: 3%;
+}
+
+.eventTileSubtitleSection {
+    width: 360px;
+    height: 79px;
+}
+
+.normalEventTitle {
+    font-family:PingFangSC-Semibold;
+    font-size:16px;
+    color:#555555;
+    letter-spacing:0.78px;
+    text-align:left;
+    font-weight: bold;
+}
+
+.eventSubTitleSection {
+    float: left;
+    clear: left;
+    position: relative;
+    left: 3%;
+}
+
+.eventSubTitle {
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#9f9f9f;
+    letter-spacing:0.59px;
+}
+
+.likeLocation {
+    float: right;
+    position: relative;
+    top: -50px;
+    right: 4.7%;
+    width:32px;
+    height:28px;
+}
+
+.specialLikeLocaion {
+    float: right;
+    position: relative;
+    top: -15px;
+    right: 4.7%;
+    width:32px;
+    height:28px;
+}
+
+.normalEventDetailsBoarder {
+    border-top:1px solid #efefef;
+    width:92%;
+    height:1px;
+    position: relative;
+    top: 23px;
+    left: 3%;
+    display: inline-block
+}
+
+.specialEventDetailsBoarder {
+    display: none;
+}
+
+.event-tags-des-section {
+    height: 197px
+}
+
+.normalEventTag {
+   position: relative;
+   top:4px;
+}
+
+.specialEventTag {
+    display: none;
+}
+
+.eventTag {
+    border:1px solid #efefef;
+    border-radius:15px;
+    width:50px;
+    height:20px;
+    display: inline-block;
+    text-align: center;
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#555555;
+    letter-spacing:0.59px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.eventTagSelected {
+    border:1px solid #efefef;
+    border-radius:15px;
+    width:50px;
+    height:20px;
+    display: inline-block;
+    text-align: center;
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#555555;
+    letter-spacing:0.59px;
+    vertical-align: middle;
+    margin-right: 8px;
+    background-color: #20c4c8;
+}
+
+.normalEventDescription {
+    position: relative;
+    top: 35px;
+    display: block;
+}
+
+.specialEventDescription {
+    display: none;
+}
+
+.eventDescription {
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#555555;
+    letter-spacing:0.59px;
+    text-align:left;
+}
+
+.normalEventPublisherStars {
+    position: relative;
+    top: 75px;
+}
+
+.specialEventPublisherStars {
+    display: none;
+}
+
+.eventPublisherImg {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.eventPublisherSection {
+    position: relative;
+    top: -15px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.eventPublisher {
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#555555;
+    letter-spacing:0.59px;
+    text-align:left;
+ }
+
+.startSection {
+    position: relative;
+    float: right;
+    height: 18px;
+    top:10px;
+}
+
+/******** Special Event Pill ********/
+.specialEventPill {
+    background-color:#ffffff;
+    box-shadow:0px 1px 9px 0px rgba(177,177,177,0.50);
+    border-radius:5px;
+    width:100%;
+    height:280px;
+    display: table;
+    margin-top : 20px;
+}
+
+.specialPillTable {
+    width: 100%;
+}
+
+.specialEventType {
+    height: 28px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    
+}
+
+.specialEventTypeFont {
+    font-family:PingFangSC-Semibold;
+    font-size:18px;
+    color:#ffffff;
+    letter-spacing:0.88px;
+    vertical-align: middle; 
+    position: relative;
+    top: 2px;
+}
+
+.specialEventPill table, tr, td {
+   border-collapse: collapse;
+   padding: 0px;
+}
+
+.localEvent {
+    background:#20c4c8;
+}
+
+.hittedEvent {
+    background:#3a4dc5;
+}
+
+.specialEventTimeSection {
+    background:#f2f2f2;
+    width:30%;
+    height:177px;
+}
+
+.specialEventTL {
+    text-align: center;
+}
+
+.specialEventTime {
+    font-family:PingFangSC-Regular;
+    font-size:25px;
+    color:#555555;
+    letter-spacing:1.47px;
+    display: block;
+    text-align: center;
+    width: 60px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 20%;
+}
+
+.specialEventImgSection {
+    width:70%;
+    height:177px;
+    display: table-cell;
+}
+
+.specialEventTitle {
+    margin-top: 14px;
+}
+
+.specialEventTitle {
+    font-family:PingFangSC-Semibold;
+    font-size:14px;
+    color:#555555;
+    letter-spacing:0.78px;
+    font-weight: bold;
+}
+
+/*******Especially for hide things********/
+.hideElement {
+    display: none;
+}
+
+/********Event Order Section  *********/
+.eventOrderBySection {
+    border: 1px solid;
+    position: relative;
+    left: 115px;
+    width: 1042px;
+    background-color: #efefef;
+    border:1px solid #dbdbdb;
+    height:44px;
+    margin-top: 41px;
+}
+
+.eventOrder {
+    width: 100%;
+    height: 100%;
+}
+
+.eventOrder table, tr, td {
+   border-collapse: collapse;
+   padding: 0px;
+}
+
+.eventOrder table{
+    width: 100%;
+}
+
+.eventOrderType {
+    width: 9%;
+    height: 43px;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+.eventOrderTypeSelected {
+    background-color: #d8d8d8;
+    width: 9%;
+    height: 43px;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+.orderTypeFont {
+    font-family:MicrosoftYaHei;
+    font-size:12px;
+    color:#555555;
+    letter-spacing:0.59px;
+    text-align:left;
+}
+
+.eventSearchResult {
+    text-align: right;
+    position: relative;
+    right: 14px;
+}
+
+/********Event Filter Section********/
+.eventFilterSection {
+    background-color:#ffffff;
+    margin-left: 115px;
+    width: 1042px;
+    height:200px;
+}
+
+.eventFiltrResultTagSection {
+    height: 50px;
+    padding: 0px;
+    width: 1042px;
+    margin-left: 115px;
+}
+
+/*.eventFiltrResultTagSection.expand {
+    height: 261px;
+}*/
+
+.eventFiltrResultTagTable {
+    background-color:#ffffff;
+    height: 50px;
+    border-bottom: 1px solid #efefef;
+    width: 100%;
+}
+
+.eventFilterTagResult {
+    height: 50px;
+    border-collapse: collapse;
+    border-bottom: 2px solid #efefef;
+}
+
+
+.eventFilterTR.eventFilterTagResultFilter tr{
+    border-collapse: collapse;
+}
+
+ .eventFilterTR.eventFilterTagResultFilter td{
+    border-collapse: collapse;
+    height: 50px;
+    padding: 0px;
+    border-bottom: 1px solid #efefef;
+}
+
+.filterTagButtonSection {
+    width: 5%;
+}
+
+.eventFilterTagResultFilter {
+    border-bottom: 1px solid #efefef;
+}
+
+
+.eventFilterSection table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.eventFilterTable td{
+    border-collapse: collapse;
+    height: 50px;
+    padding: 0px;
+    border-bottom: 1px solid #efefef;
+}
+
+.eventFilterTR {
+    border-collapse: collapse;
+}
+
+.eventFilterType {
+    vertical-align: middle;
+    width: 10%;
+    text-align: left;
+    position: relative;
+    left: 15px;
+}
+
+.eventFilterFont {
+    font-family:MicrosoftYaHei;
+    font-size:12px;
+    color:#555555;
+    letter-spacing:0.59px;
+    margin-left: 8px;
+}
+
+.eventFilterLabel {
+    font-family:MicrosoftYaHei;
+    font-size:12px;
+    color:#555555;
+    letter-spacing:0.59px;
+    margin-left: 8px;
+    position: relative;
+    top: -2px;
+    margin-right: 40px;
+}
+
+.radionStyle {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.eventFreeOrNot input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+    width: 18px;
+    height: 18px;
+}
+
+.eventFreeOrNot input:checked{
+    background-image: url('../images/icons/radioButtonSelected_icon.png');
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    outline: none;
+}
+
+.eventFreeOrNot input:active{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+       outline: none;
+}
+
+.eventFilterSelection {
+    border:1px solid #d7d8dd;
+    background-color: #ffffff;
+    border-radius: 0px;
+    width:78px;
+    height:26px;
+    background-image: url('../images/icons/radioButtonSelected_icon.png') no-repeat right center;
+}
+
+.eventFilterTagSection {
+    display: inline-block;
+    background-color:#f2f2f2;
+    border-radius:10px;
+    margin-right: 10px;
+    height:25px;
+}
+
+.eventFilterTag {
+    display: inline-block;
+    position: relative;
+    left:10px;
+    width:76px;
+}
+
+.eventFilterTimeTag {
+    width:91px;
+}
+.eventFilterTag table{
+    border-collapse:collapse;
+    width: 100%;
+}
+
+.eventFilterTag tr{
+    vertical-align: middle;
+}
+
+.filterTagValueSection {
+    position: relative;
+    top: 2px;
+    width: 62%;
+}
+
+.filterTagValueFont {
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#555555;
+    letter-spacing:0.59px;
+    text-align:left;
+}
+
+.eventFilterFoldFont {
+    font-family:MicrosoftYaHei;
+    font-size:12px;
+    color:#20c4c8;
+    letter-spacing:0.59px;
+    background:none!important;
+    border:none; 
+    padding:0!important;
+    /*border is optional*/
+    border-bottom:1px solid #20c4c8;; 
+    cursor: pointer;
+}
+
+.eventFilterFoldSection {
+    position: relative;
+    display: none;
+}
+
+.stuck .eventFilterFoldSection {
+    display: inline-block;
+}
+
+.filterDeleteIconSectionTd {
+    text-align: right;
+}
+
+.filterDeleteIconSection {
+    width: 17px;
+    height: 17px;
+    display: table-cell;
+    background-color:#f2f2f2;
+    position: relative;
+    top:4px;
+    right:3px;
+}
+
+.filterTimeDeleteIconSection {
+    right:-1px;
+}
+
+/********* Event Page Calender **********/
+.bi-event-time.eventCalenderFilter { 
+    margin-bottom: 0px;
+    position: relative;
+    top: 2px;
+}
+
+.cal-input-icon.event-cal-input-icon {
+    background-image: url('../images/icons/event-calender.png');
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 280px;
+    left: -102px;
+}
+
+.input-group-btn.event-calender-group-btn {
+    border-left:1px solid #d7d8dd;
+    width:1px;
+    height:31px;
+    position: relative;
+    top: 1px;
+}
+
+.form-control.cal-input-box.event-calender-input {
+    width: 250px;
+    position: relative;
+    top: -3px;
+}
+
+.btn.btn-default.cal-input-btn.event-calender-section {
+    height: 30px;
+    text-align: center;
+    position: relative;
+    left: 1px;
+    width: 24px;
+}
+
+.event-calender-icon {
+    display: inline-flex;
+    position: relative;
+    top: -7px;
+    left: 2px;
+}
+
+.uib-weeks.ng-scope td {
+    height: 32px;
+}
+
+/************ Header *************/
+.appHeaderSection {
+    background:#3b3b3b;
+    width:1280px;
+    height:60px;
+}
+
+.logoIconSection {
+    position: relative;
+    left: 9.5%;
+    top: 18px;
+    width: 122px;
+    display: flex;  
+}
+
+.searchIconSection {
+    display: flex;
+    position: relative;
+    left: 24%;
+    top: -6px;
+    width: 20px;
+}
+
+.searchTextFieldSection {
+    display: flex;
+    position: relative;
+    left: 26%;
+    top: -32px;
+    width: 23%;
+}
+
+.searchTextField {
+    width: 100%;
+    outline: none;
+    border-style: none none solid;
+    border-width: 2px;
+    border-color: #5f5f5f;
+    height: 26px;
+    background-color: #3b3b3b;
+    font-family:MicrosoftYaHei;
+    font-size:12px;
+    color:#656565;
+    letter-spacing:0.59px;
+}
+
+.searchResultSection {
+    display:block;
+}
+
+.eventPageButtonSection {
+    display: flex;
+    width: 6%;
+    left: 65%;
+    top: -56px;
+    position: relative;
+    height: 41px;
+}
+
+.exploreButtonFont {
+    position: relative;
+    left: 8px;
+    font-family:PingFangSC-Regular;
+    font-size:14px;
+    color:#dadada;
+    letter-spacing:0.78px;
+    text-align:left;
+}
+
+.postPageButtonSection {
+    display: flex;
+    width: 6%;
+    left: 72%;
+    top: -97px;
+    position: relative;
+    height:40px;
+}
+
+.postButtonFont {
+    position: relative;
+    left:9px;
+    font-family:PingFangSC-Regular;
+    font-size:14px;
+    color:#dadada;
+    letter-spacing:0.78px;
+    text-align:left;
+}
+
+.headerButtonActive {
+    border-bottom: 4px solid #20c4c8;
+}
+
+.headerButtonActivefont {
+    color: #ffffff;
+}
+
+.headerSplitSection {
+    display: flex;
+    border-left:1px solid #565656;
+    width:1px;
+    height:29px;
+    position: relative;
+    left: 79.5%;
+    top: -140px;
+}
+
+.headerProfileImageSection {
+    display: flex;
+    width:40px;
+    height:40px;
+    position: relative;
+    left: 80.5%;
+    top: -175px;
+}
+
+.headerProfileNickNameSection {
+    display: flex;
+    width:80px;
+    height:40px;
+    position: relative;
+    left: 84.5%;
+    top: -205px;
+}
+
+.headerProfileNickNameFont {
+    font-family:MicrosoftYaHei;
+    font-size:14px;
+    color:#ffffff;
+    letter-spacing:0.59px;
+    text-align:left;
+}
+
+.headerSearchResultSection {
+    display: none;
+    width:23%;
+    height:40px;
+    position: relative;
+    left: 26%;
+    top: -221px;
+    background-color: #ffffff;
+    box-shadow:0px 1px 9px 0px rgba(177,177,177,0.50);
+
+}
+
+.showSearchResult {
+    display: flex;
+}
+
+/********  Footer  *********/
+html, body {height: 100%;}
+
+body {
+ height:100%; 
+ margin:0px; 
+ padding:0px;
+ width: 1280px;
+ }
+
+.appContentEvent {
+    padding-bottom: 250px;
+}
+.appFooterSection {
+    position: relative;
+    clear:both;
+    width: 1280px;
+    height: 250px;
+    background-color: #3b3b3b;
+    right: 0;
+    left: 0;
+}
+
+.footerInfoAndCopySection {
+    width: 63%;
+    position: relative;
+    left: 10.5%;
+    float: left;
+}
+
+.footerInformationSection {
+    height:165px;
+    width: 100%;
+}
+
+.footerCopyrightSection {
+    height:83px;
+    border-top: solid 1px #979797;
+    width: 100%;
+}
+
+.footerFollowSection {
+    float: left;
+    position: relative;
+    left: 100px;
+    width: 17%;
+    height: 248px;
+}
+
+table.footerInfoTable{
+    width: 100%;
+    position: relative;
+    top:27px;
+}
+
+.footerInfoTable th td{
+    width: 33%;
+}
+
+.footerInfoThRow th{
+    height: 34px;
+    width: 33%;
+}
+
+.footerInfoTdRow td{
+    height: 14px;
+}
+
+.footerInfoThFont {
+    font-family: PingFangSC;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+}
+
+.footerInfoTdFont {
+    font-family: PingFangSC;
+    font-size: 12px;
+    font-weight: -300;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+}
+
+table.footerCopyRightTable{
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+
+.footerCopyRightTable td{
+    width: 33%;
+}
+
+.footerLogoIconSection {
+    width: 79.6px;
+    height: 18.6px;
+    background-size: 79.6px 18.6px;
+}
+
+.footerCopyRightTdFont {
+    font-family: PingFangSC;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+}
+
+.iconWraper {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+table.footerFollowTable{
+    width: 100%;
+    position: relative;
+    top:27px;
+    left: 60px;
+}
+
+.footerFollowThRow th {
+    height: 32px;
+}
+
+.footerFollowTableRow td{
+    height: 14px;
+}
+.followUsqrcodeSection {
+    position: relative;
+    background-color: #ffffff;
+    width: 130px;
+    height: 130px;
+    padding-left: 5px;
+    padding-top: 5px;
+    top: 12px;
+}
+
+.appContentSection {
+    display: block;
+    margin-bottom: 30px;
+    margin-top:20px;
+}
+
+/*******   Event Page More Button  ********/
+.eventMoreButtonSection {
+    height: 97px;
+    position: relative;
+    clear:both;
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+.eventMoreButton {
+    width: 14%;
+    height: 60px;
+    background-color: #ffffff;
+    border: solid 1px #dbdbdb;
+    position: relative;
+    top: 37px;
+    left: 43%;
+    text-align: center;
+}
+
+.eventMoreFont {
+    font-family: PingFangSC;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.9px;
+    color: #3b3b3b;
+    position: relative;
+    top: 30%;
+}
+
+/******** Event Detail Page *********/
+.eventDetailPageWraper {
+    width: 1280px;
+    height: 100%;
+}
+
+.backgroundImageSection {
+    width: 100%;
+    height:418px;
+    margin-top: -20px;
+}
+
+.eventBackgroundImage {
+   width: 1280px;
+   height:418px;
+   object-fit: cover;
+}
+
+.event-info-section {
+    width: 62%;
+    height: auto;
+    position: relative;
+    left: 115px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.eventMainInfoSection {
+    width: 100%;
+    height: 326px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(177, 177, 177, 0.5);
+    padding-top: 30px;
+}
+
+.event-main-info-title-section {
+    width: 95%;
+    height: 45px;
+    position: relative;
+    left: 3.5%;
+    display: block;
+}
+
+.event-main-info-title-font {
+    font-family: PingFang-SC;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1.6px;
+    color: #3b3b3b;
+
+}
+
+.event-main-info-subtitle-section {
+    width: 95%;
+    height: 25px;
+    position: relative;
+    left: 3.5%;
+    top: 5px;
+}
+
+.event-main-info-subtitle-font {
+    font-family: PingFangSC;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.9px;
+    color: #a0a0a0;
+}
+
+.event-main-info-split-section {
+    width: 93%;
+    height: 1px;
+    position: relative;
+    left: 30px;
+    border-top: solid 1px #efefef;
+    top: 20px;
+}
+
+.event-main-info-description-section {
+    width: 93%;
+    height: 40px;
+    position: relative;
+    left: 3.5%;
+    margin-top: 20px;
+    top: 20px;
+}
+
+.event-main-info-description-font {
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    color: #3b3b3b;
+}
+
+.event-main-info-time-section {
+    width: 93%;
+    height: 20px;
+    position: relative;
+    left: 3.5%;
+    margin-top: 15px;
+    top: 15px;
+}
+
+.event-main-info-location-section {
+    width: 93%;
+    height: 20px;
+    position: relative;
+    left: 3.5%;
+    margin-top: 15px;
+    top: 15px;
+}
+
+.event-main-info-tags-section {
+    width: 93%;
+    height: 20px;
+    position: relative;
+    left: 3.5%;
+    margin-top: 15px;
+    top: 15px;
+}
+
+.event-main-info-label-font {
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    color: #3b3b3b;
+}
+
+.event-main-info-content-font {
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    color: #3b3b3b;
+}
+
+.event-detial-info-section {
+    width: 100%;
+    height: initial;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(177, 177, 177, 0.5);
+    position: relative;
+    top: 20px;
+    padding-bottom: 30px;
+}
+
+.event-detail-info-label-section {
+    width: 95%;
+    height: 28px;
+    position: relative;
+    left: 3.5%;
+    top: 20px;
+}
+
+.event-datial-info-label-font {
+    font-family: PingFangSC;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #a0a0a0;
+}
+
+.event-detail-info-partial-section {
+    width: 93%;
+    position: relative;
+    left: 3.5%;
+    margin-top: 40px;
+    padding-bottom: 13px;
+}
+
+.event-detail-info-partial-split-section {
+    width: 2px;
+    height: 30px;
+    background-color: #3b3b3b;
+    display: inline-block;
+    position: relative;
+    top:10px;
+    margin-right: 10px;
+}
+
+.event-detail-info-partial-label-font {
+    font-family: PingFangSC;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.9px;
+    color: #3b3b3b;
+}
+
+.event-detail-info-partial-content-section {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.event-detial-info-partial-content-font {
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    color: #3b3b3b;
+}
+
+.event-detial-info-partial-content-discountNum-font {
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    color: #20c4c8;
+}
+
+.event-location-info-section {
+    width: 100%;
+    height: 436px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(177, 177, 177, 0.5);
+    position: relative;
+    top: 40px;
+    margin-bottom: 30px;
+}
+
+.event-interaction-section {
+    float: left;
+    width: 19.5%;
+    height: auto;
+    position: relative;
+    left: 135px;
+}
+
+.event-apply-section {
+    width: 100%;
+    height: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(177, 177, 177, 0.5);
+}
+
+.event-organizor-section {
+    width: 100%;
+    height: 141px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(177, 177, 177, 0.5);
+    position: relative;
+    top: 20px;
+}
+
+.event-detail-info-partial-guest-section {
+    width: 50%;
+    height: 150px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.event-detail-info-partial-guest-img-section {
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+}
+
+.event-detail-guest-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.event-detial-info-partial-guest-intro-section {
+    width: 175px;
+    height: 78px;
+    display: inline-flex;
+    position: relative;
+    top: -60px;
+    left: 20px;
+}
+
+.event-detial-info-partial-guest-name-font {
+    font-family: PingFangSC;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.9px;
+    color: #20c4c8;
+}
+
+.event-detial-info-partial-guest-intro {
+    width: 160px;
+    position: relative;
+    left: -90px;
+    top: 36px;
+    display: inline-table;
+}
+.event-detial-info-partial-guest-name{
+    width: 100%;
+    height: 30px;
+}
+
+.event-detial-info-partial-guest-intro-font {
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    color: #3b3b3b;
+}
+
+.event-detail-info-partial-sponsor-section {
+    width: 48%;
+    height: 140px;
+    background-color: #ffffff;
+    border: solid 1px #efefef; 
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.event-detial-info-partial-sponsors-img-section {
+    width: 140px;
+    height: 80px;
+    position: relative;
+    left: 5px;
+    text-align: center;
+}
+
+.event-detail-sponsor-img {
+    height: 80px;
+}
+
+.event-detial-info-partial-sponsors-intro-section {
+    width: 97%;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    left: -2px;
+}
+
+.event-detail-partial-sponsor-table {
+    width: 100%;
+    height:82px;
+    position: relative;
+    top: 29px;
+}
+
+.event-detail-partial-sponsor-table td {
+    width: 50%;
+}
+
+.event-detail-info-partial-sponsors-intro-font {
+    font-family: PingFangSC;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.9px;
+    color: #3b3b3b;
+}
+
+.event-detail-location-section {
+    width: 93%;
+    height: 40px;
+    margin-top: 40px;
+    position: relative;
+    left: 3.5%;
+}
+
+.event-detail-location {
+    height: 20px;
+}
+
+.event-detail-location-font {
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #3b3b3b;
+}
+
+.event-detail-location-map-section {
+    width: 100%;
+    height: 288px;
+    margin-top: 20px;
+}
+
+.event-apply-table-section {
+
+}
+
+.event-apply-table{
+    height:97px;
+    position: relative;
+    left:12px;
+    top:20px;
+}
+
+.event-apply-table-font {
+    font-family: PingFangSC;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.8px;
+    color: #3b3b3b;
+}
+
+.event-apply-spinner-textfield{
+    width: 48px;
+    border: 0px;
+    border-bottom: solid 1px #dcdcdc;
+    text-align: center;
+}
+
+.event-apply-button-section {
+    width: 224px;
+    height: 40px;
+    position: relative; 
+    left:12px;
+    top: 30px;
+    border-radius: 2px;
+    background-color: #20c4c8;
+    box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5);
+    text-align: center;
+    padding-top: 8px;
+}
+
+.event-apply-button-font {
+    font-family: PingFangSC;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.9px;
+    color: #ffffff;
+}
+
+.event-apply-split-section {
+    position: relative;
+    left: 12px;
+    top: 45px;
+    width: 224px;
+    height: 1px;
+    border-bottom: solid 1px #efefef;
+}
+
+.event-apply-like-section {
+    width: 160px;
+    height: 40px;
+    border-radius: 2px;
+    border: solid 1px #efefef;
+    position: relative;
+    left: 12px;
+    top: 55px;
+}
+
+.event-apply-like {
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    left: 27px;
+    top: 5px;
+}
+
+.event-apply-like-label {
+    display: inline-block;
+    position: relative;
+    left: 26px;
+    top: -12px;
+}
+
+.event-apply-share-section {
+    height: 40px;
+    width: 60px;
+    position: relative;
+    top: 15px;
+    left: 176px;
+}
+
+.event-apply-share-icon {
+    width: 24.7px;
+    height: 22.6px;
+    background-size: contain;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+}
+
+.event-apply-share-text {
+    display: inline-block;
+    position: relative;
+}
+
+.event-apply-share-hidden-section {
+    width: 224px;
+    height: 40px;
+    position: relative;
+    left:12px;
+    top: -25px;
+    transition: width 2s;
+    background-color: #ffffff;
+}
+
+.event-apply-share-hidden-icon {
+    width: 24.7px;
+    height: 22.6px;
+    background-size: contain;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+}
+
+.event-apply-share-split {
+    width: 1px;
+    height: 30px;
+    border-left: solid 1px #efefef;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 3px;
+}
+
+.apply-icon-wraper {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin-left: 5.5px;
+}
+
+.apply-remove-icon-wraper {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    position: relative;
+    background-size: contain;
+    top: 2px;
+}
+
+.event-organizor-info-section {
+    width: 224px;
+    height: 50px;
+    position: relative;
+    top: 15px;
+    left: 12px;
+}
+
+.event-organizor-img-section {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top:-11px;
+}
+.event-organizor-img {
+    width: 100%;
+    height: 100%;
+}
+
+.event-organizor-name-section {
+    width: 108px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+.event-organizor-font {
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    color: #555555;
+}
+
+.event-start-section {
+    position: relative;
+    float: left;
+    height: 18px;
+}
+
+.event-organizor-split-verizontal-section {
+    width: 1px;
+    height: 30px;
+    border-left: solid 1px #efefef;
+    display: inline-block;
+    position: relative;
+    left: 15px;
+}
+
+.event-organizor-posted-section {
+    display: inline-block;
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+.event-organizor-posted-section td {
+    text-align: center;
+}
+
+.event-organizor-posted-font {
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    color: #a0a0a0;
+}
+
+.event-organizor-horizontal-section {
+    width: 224px;
+    height: 1px;
+    border-top: solid 1px #efefef;
+    position: relative;
+    left: 12px;
+    top: 30px;
+}
+
+.event-organizor-link-section {
+    width: 224px;
+    height: 40px;
+    border-radius: 2px;
+    border: solid 1px #efefef;
+    position: relative;
+    left: 12px;
+    top: 40px;
+    text-align: center;
+}
+
+.event-organizor-link-font {
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.7px;
+    color: #3b3b3b;
+    position: relative;
+    top: 10px;
+}
+
+.event-navi-section {
+    display: none;
+    width: 1280px;
+    height: 50px;
+    background-color: #3b3b3b;
+}
+
+.event-navi-table {
+    height: 50px;
+    width: 400px;
+    position: relative;
+    left: 140px;
+}
+
+.event-navi-table td{
+    width: 76px;
+}
+
+.event-navi-font {
+    font-family: PingFangSC;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.9px;
+    color: #ffffff;
+}
+
+.event-navi-title-section{
+    position: relative;
+    height: 50px;
+    top:-50px;
+    float: right;
+    right: 102px;
+}
+
+.event-navi-title-font {
+    position: relative;
+    top:2px;
+    font-family: PingFang-SC;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+.event-navi-current {
+    width: 76px;
+    height: 2px;
+    border-bottom: solid 2px #ffffff;
+    position: relative;
+    left: -1px;
+    top: 5px;
+    display: none;
+}
+
+.event-apply-spinner-up {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    position: relative;
+    display: inline-block;
+}
+
+.event-apply-spinner-down {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    left: -19px;
+}
+
+.event-apply-left-font {
+    height: 22px;
+    font-family: PingFangSC;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.8px;
+    color: #a0a0a0;
+    position: relative;
+    left: -22px;
+}
+
+/****** Animation *******/
+/*****   Sticky   *****/
+.stuck {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 1042px;
+  left: 115px;
+}
+
+.showFilter {
+    display: none
+}
+ .occupy{
+     width: 100%
+ }
+
+.specialStuck {
+  position: fixed;
+  top: 45px;
+  z-index: 998;
+  width: 333px;
+  left: 825px;
+}
+
+.specialBottomStuck {
+    position: absolute;
+    z-index: 998;
+    width: 333px;
+    left: 825px;
+}
+
+.headerStuck {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.sideStuck {
+    position: fixed;
+    z-index: 998;
+    width: 249.594px;
+    left: 929px;
+    top: -1px;
+}
+
+.sideStuck2 {
+    top: 50px;
+}
+
+.sideBottomStuck {
+    position: absolute;
+    z-index: 998;
+    width: 249.594px;
+    left: 929px;
+}
+
+/*******Show and Hide********/
+.show {
+    display: inline-block;
+}

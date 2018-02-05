@@ -1,0 +1,418 @@
+
+
+/******  Event Page Pill Section   ******/
+.normalEventPill {
+    background-color:#ffffff;
+    box-shadow:0px 1px 9px 0px rgba(177,177,177,0.50);
+    border-radius:5px;
+    width:100%;
+    height:280px;
+    display: table;
+    margin-top : 20px;
+}
+
+.normalEvent {
+    float: left;
+    width: 54%;
+    position: relative;
+    left: 9%;
+}
+.specialEvent {
+    width: 26%;
+    position: relative;
+    right: 9%;
+    float: right;
+}
+
+/******  Event Page Pill Image Section   ******/
+.normalEventImgSection {
+    width:40%;
+    height:205px;
+    display: table-cell;
+}
+.normalEventImg {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+}
+
+.normalEventPill table, tr, td {
+   border-collapse: collapse;
+   padding: 0px;
+}
+
+.specialEventImgSection {
+    width: 100%;
+    height: 177px;
+
+}
+
+/******  Event Page Pill Time Section   ******/
+.normalEventTimeSection {
+    background-color:#f2f2f2;
+    width:100%;
+    height:75px;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.normalEventTL {
+    display: inline-block;
+    position: relative;
+    top: 14px;
+    left: 4%;
+    width: 80px;
+}
+.normalEventTime {
+    font-family:PingFangSC-Regular;
+    font-size:16px;
+    color:#555555;
+    letter-spacing:1.08px;
+    text-align:left;
+    display: block;
+}
+
+.timeTableRow tr{
+    margin-bottom: 4px;
+}
+
+.normalEventLocation {
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#9f9f9f;
+    letter-spacing:0.68px;
+    text-align:left;
+}
+
+.normalEventBoarder {
+    position: relative;
+    top:20px;
+    left: 13%;
+    border-left:1px solid #d5d5d5;
+    width:1px;
+    height:39px;
+    display: inline-block;
+}
+
+.normalEventCostAttendency {
+    width: 38%;
+    height: 39px;
+    float: right;
+    position: relative;
+    right: 4%;
+    top: 18px;
+}
+
+
+.showDollarLabel {
+    font-family:PingFangSC-Regular;
+    font-size:10px;
+    color:#9f9f9f;
+    letter-spacing:0.59px;
+    text-align:left;
+}
+
+/******  Event Page Icon ******/
+.showLocationIcon {
+    background-image: url('../images/icons/location_icon.png');
+    background-repeat: no-repeat;
+    width:22px;
+    height:26px;
+    position: relative;
+    left: 4%;
+    top: 12px;
+    display: inline-block;
+}
+
+.hideLocationIcon {
+    display: none;
+}
+
+.showDollarIcon {
+    background-image: url('../images/icons/dollar_icon.png');
+    background-repeat: no-repeat;
+    width:18px;
+    height:15px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.showAttendencyIcon {
+    background-image: url('../images/icons/attendency_icon.png');
+    background-repeat: no-repeat;
+    width:18px;
+    height:18px;
+}
+
+.showUnlikeIcon {
+    background-image: url('../images/icons/unlike_icon.png');
+    background-repeat: no-repeat;
+    width:32px;
+    height:28px;
+}
+
+.showLikeIcon {
+    background-image: url('../images/icons/like_icon.png');
+    background-repeat: no-repeat;
+    width:32px;
+    height:28px;
+    
+}
+
+.showStarIcon {
+    background-image: url('../images/icons/star_icon.png');
+    background-repeat: no-repeat;
+    width:18px;
+    height:18px;
+}
+
+.showBlankStarIcon {
+    background-image: url('../images/icons/blank_star_icon.png');
+    background-repeat: no-repeat;
+    width:18px;
+    height:18px;
+}
+
+/******    Event Detail Section    ******/
+.eventDetails {
+    display: inline;
+    padding:0px;
+    margin:0px;
+}
+
+.pillTable tr {
+    vertical-align: top;
+}
+
+.normalEventTitle {
+    position: relative;
+    top: 18px;
+    display: block; 
+    height: 45px;
+}
+
+.eventTitleSection {
+    float: left;
+    clear: right;
+    position: relative;
+    left: 3%;
+}
+
+.normalEventTitle {
+    font-family:PingFangSC-Semibold;
+    font-size:16px;
+    color:#555555;
+    letter-spacing:0.78px;
+    text-align:left;
+    font-weight: bold;
+}
+
+.eventSubTitleSection {
+    float: left;
+    clear: left;
+    position: relative;
+    left: 3%;
+}
+
+.eventSubTitle {
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#9f9f9f;
+    letter-spacing:0.59px;
+}
+
+.likeLocation {
+    float: right;
+    position: relative;
+    top: -15px;
+    right: 4.7%;
+    width:32px;
+    height:28px;
+}
+
+.normalEventDetailsBoarder {
+    border-top:1px solid #efefef;
+    width:92%;
+    height:1px;
+    position: relative;
+    top: 23px;
+    left: 3%;
+    display: inline-block
+}
+
+.specialEventDetailsBoarder {
+    display: none;
+}
+
+.normalEventTag {
+   position: relative;
+   top:4px;
+}
+
+.specialEventTag {
+    display: none;
+}
+
+.eventTag {
+    border:1px solid #efefef;
+    border-radius:15px;
+    width:50px;
+    height:20px;
+    display: inline-block;
+    text-align: center;
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#555555;
+    letter-spacing:0.59px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+.normalEventDescription {
+    position: relative;
+    top: 35px;
+    display: block;
+}
+
+.specialEventDescription {
+    display: none;
+}
+
+.eventDescription {
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#555555;
+    letter-spacing:0.59px;
+    text-align:left;
+}
+
+.normalEventPublisherStars {
+    position: relative;
+    top: 75px;
+}
+
+.specialEventPublisherStars {
+    display: none;
+}
+
+.eventPublisherImg {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.eventPublisherSection {
+    position: relative;
+    top: -15px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.eventPublisher {
+    font-family:PingFangSC-Regular;
+    font-size:12px;
+    color:#555555;
+    letter-spacing:0.59px;
+    text-align:left;
+ }
+
+.startSection {
+    position: relative;
+    float: right;
+    height: 18px;
+    top:10px;
+}
+
+/******** Special Event Pill ********/
+.specialEventPill {
+    background-color:#ffffff;
+    box-shadow:0px 1px 9px 0px rgba(177,177,177,0.50);
+    border-radius:5px;
+    width:100%;
+    height:280px;
+    display: table;
+    margin-top : 20px;
+}
+
+.specialPillTable {
+    width: 100%;
+}
+
+.specialEventType {
+    height: 28px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    
+}
+
+.specialEventTypeFont {
+    font-family:PingFangSC-Semibold;
+    font-size:18px;
+    color:#ffffff;
+    letter-spacing:0.88px;
+    vertical-align: middle; 
+    position: relative;
+    top: 2px;
+}
+
+.specialEventPill table, tr, td {
+   border-collapse: collapse;
+   padding: 0px;
+}
+
+.localEvent {
+    background:#20c4c8;
+}
+
+.hittedEvent {
+    background:#3a4dc5;
+}
+
+.specialEventTimeSection {
+    background:#f2f2f2;
+    width:30%;
+    height:177px;
+}
+
+.specialEventTL {
+    text-align: center;
+}
+
+.specialEventTime {
+    font-family:PingFangSC-Regular;
+    font-size:25px;
+    color:#555555;
+    letter-spacing:1.47px;
+    display: block;
+    text-align: center;
+    width: 60px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 20%;
+}
+
+.specialEventImgSection {
+    width:70%;
+    height:177px;
+    display: table-cell;
+}
+
+.specialEventTitle {
+    margin-top: 14px;
+}
+
+.specialEventTitle {
+    font-family:PingFangSC-Semibold;
+    font-size:14px;
+    color:#555555;
+    letter-spacing:0.78px;
+    font-weight: bold;
+}
+
+/*******Especially for hide things********/
+.hideElement {
+    display: none;
+}

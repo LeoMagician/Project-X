@@ -1,0 +1,13 @@
+body {
+    padding: 20px;
+}
+
+.sample {
+    padding-bottom: 50px;
+    margin-left: 30px;
+    border-top: 1px solid lightgray;
+}
+
+.manual {
+    margin-bottom: 20px;
+}

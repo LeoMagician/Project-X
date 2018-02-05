@@ -1,0 +1,36 @@
+<div>
+    <div ng-class="{showLocationIcon:pill.normal,hideElement:pill.special}"></div>
+    <div ng-class="{normalEventTL:pill.normal,specialEventTL:special}">
+        <span ng-class="{normalEventTime:pill.normal,specialEventTime:special}">{{pill.month}}月{{date}}</span>
+        <span ng-class="{hideElement:pill.normal,specialEventTime:special}">{{pill.date}}日</span>
+        <span class="normalEventLocation">{{pill.province}}  {{pill.city}}</span>
+    </div>
+    <div ng-class="{normalEventBoarder:pill.normal,hideElement:special}">
+    </div>
+    <div ng-class="{normalEventCostAttendency:pill.normal,hideElement:special}">
+        <table>
+            <tr >
+                <td>
+                    <div class="showDollarIcon"></div>
+                </td>
+                <td>
+                    <div class="showDollarLabel">费用:</div>
+                </td>
+                <td>
+                    <div class="showDollarLabel">{{pill.price}}¥/人</div>
+                </td>
+            </tr>
+            <tr> 
+                <td>
+                    <div class="showAttendencyIcon"></div>
+                </td>
+                <td>
+                    <div class="showDollarLabel">已报名:</div>
+                </td>
+                <td>
+                    <div class="showDollarLabel">{{pill.registed}}/{{pill.upper}}</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

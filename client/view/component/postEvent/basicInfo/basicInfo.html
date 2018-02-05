@@ -1,0 +1,136 @@
+<div class="basic-info-container">
+	<!--左边栏起始-->
+	<div class="basic-info-sidebar-bg">
+
+		<div class="basic-info-sidebar-pic">
+			<div class="text-area-hint ">
+				<div class="icon-lightbull"></div>
+				<p class="text-area-words">{{hintText}}</p>
+			</div>
+		</div>
+	</div>
+	<!--左边栏结束-->
+
+	<!--右边栏-->
+	<div class="basic-info-main">
+		<div class="bi-form-title"><label>活动基本信息</label></div>
+
+		<!--活动基本信息form 起始-->
+		<form novalidate class="basic-info-form" name="form">
+			<!--活动名称以及活动子名称 起始-->
+			<label for="eventTitle" class="bi-title-text">活动名称:</label><br>
+			<div class="bi-event-name">
+				<input type="text" class='bi-input-active bi-input-inactive ng-class: {biError1: (form.$submitted || form.eventTitle.$touched) && form.eventTitle.$error.required}' name="eventTitle" id="eventTitle" ng-model="basicInfo.title"
+					maxlength="20" required ng-click="showHint('eventTitle')">
+				<div class="bi-word-container">
+					<span class="bi-word-count">{{titleNum}}/20</span>
+				</div>
+				<a class="bi-form-addSubTitle" ng-click="addSubTitle = ! addSubTitle" ng-hide="addSubTitle">+ 添加小标题</a>
+				<input type="text" class="bi-input-active bi-input-inactive" name="eventSubTitle" id="eventSubTitle" placeholder="输入子标题"
+					ng-show="addSubTitle" ng-model="basicInfo.subtitle" ng-trim="false" maxlength="20">
+				<div class="bi-word-container">
+					<span class="bi-word-count" ng-show="addSubTitle">{{subtitleNum}}/20</span>
+				</div>
+				<a class="bi-form-addSubTitle" ng-click="addSubTitle = addSubtitle" ng-show="addSubTitle">- 收起小标题</a>
+			</div>
+			<!--活动名称以及活动子名称 结束-->
+
+			<!--活动时间 起始-->
+			<label for="timeRange" class="bi-title-text">活动时间:</label><br>
+			<div id="timeRange" class="bi-event-time">
+				<input type="text" class="form-control cal-input-box" uib-datepicker-popup="{{format}}" ng-model="basicInfo.dt" is-open="popup2.opened"
+					datepicker-options="dateOptions" placeholder="选择起始日期" ng-required="true" close-text="Close" ng-click="open2()" />
+				<span class="input-group-btn">
+                    <button type="button" class="btn btn-default cal-input-btn" ng-click="open2()"><i class="cal-input-icon"></i></button>
+                </span>
+				<input type="text" class="time start time-pick-input time-pick" placeholder=" 选择起始时间" id="starttime" />
+
+				<!--<a class="bi-form-addSubTitle" ng-click="addEndDate = ! addEndDate" ng-hide="addEndDate">+ 添加结束日期</a>-->
+
+				<div class="end-date-pick">至</div>
+				<input type="text" class="form-control cal-input-box" uib-datepicker-popup="{{format}}" ng-model="basicInfo.dt1" is-open="popup3.opened"
+					datepicker-options="dateOptions1" placeholder="选择结束日期" ng-required="true" close-text="Close" ng-click="open3()" />
+				<span class="input-group-btn">
+                    <button type="button" class="btn btn-default cal-input-btn" ng-click="open3()"><i class="cal-input-icon"></i></button>
+                </span>
+				<input type="text" class="time end time-pick-input time-pick" placeholder=" 选择结束时间" id="endtime" />
+			</div>
+			<!--活动时间 结束-->
+
+			<!--活动地点 起始-->
+
+			<label class="bi-title-text">活动地点</label>
+			<div class="dropdown-place-container">
+				<div id="dd" class="wrapper-dropdown-2" tabindex="1">
+					<span class="dropdown-placeholder">省份／直辖市</span>
+					<ul class="dropdown">
+						<li>北京</li>
+						<li>天津</li>
+						<li>河北</li>
+						<li>北京</li>
+						<li>天津</li>
+						<li>河北</li>
+						<li>北京</li>
+					</ul>
+				</div>
+
+				<div id="dd1" class="wrapper-dropdown-2 ng-class: {biError4: (form.$submitted || form.eventTitle.$touched) && form.eventTitle.$error.required}" tabindex="1">
+					<span class="dropdown-placeholder">城市</span>
+					<ul class="dropdown">
+						<li>东城区</li>
+						<li>朝阳区</li>
+						<li>西城区</li>
+					</ul>
+				</div>
+
+				<!--<div id="dd2" class="wrapper-dropdown-2" tabindex="1">
+					<span><strong class="dropdown-placeholder">区</strong></span>
+					<ul class="dropdown">
+						<li>东城区</li>
+						<li>东城区</li>
+						<li>东城区</li>
+					</ul>
+				</div>-->
+
+			</div>
+			<input type="text" class='bi-input-address-active bi-input-inactive bi-post-event-address-length ng-class: {biError5: (form.$submitted || form.eventAddress.$touched) && form.eventAddress.$error.required}' name="eventAddress" id="eventAddress"
+				ng-model="basicInfo.address" maxlength="20" required placeholder="详细地址">
+			<!--活动地点 结束-->
+
+			<!--人数上限 起始-->
+			<div class="bi-num-limit-container">
+				<div class="bi-radio-container">
+					<label class="bi-title-text">人数上限:&nbsp;&nbsp;</label>
+					<input type="radio" class="bi-radio-origin" id="numLimit" name="numLimit" checked="checked" ng-click="limit()">
+					<label for="numLimit" class="bi-title-text">
+					<span class="radio">
+						<input type="number" id="limitNum" name="limitNum" ng-model="basicInfo.limitNum" min="0" class="bi-input-active bi-input-inactive bi-input-width-override ng-class: {biError6: !disableInput && (form.$submitted || form.limitNum.$touched) && form.limitNum.$error.required}"  ng-disabled="disableInput" required>&nbsp;人	
+					</span>
+					
+					</label>
+					
+				</div>
+
+				<div class="bi-radio-container">
+					<input type="radio" id="nolimit" class="bi-num-limit-space" name="numLimit" ng-click="nolimit()">
+					<label class="bi-title-text" for="nolimit"><span class="radio">不限制</span></label>
+				</div>
+
+			</div>
+			<!--人数上限 结束-->
+
+			<!--人均预算 起始-->
+			<label class="bi-title-text">人均预算:&nbsp;&nbsp;</label>
+			<input type="number" step="0.01" min="0" id="avgPrice" name="avgPrice" required ng-model="basicInfo.avgPrice" class="bi-input-active bi-input-inactive bi-input-width-override1 ng-class: {biError7: (form.$submitted || form.avgPrice.$touched) && form.avgPrice.$error.required}">&nbsp;<span class="bi-title-text">元／人</span>
+			<!--人均预算 结束-->
+			<br>
+			<div class="post-event-btn">
+				<input type="submit" class="post-event-btn-save" value="保存"></input>&nbsp;&nbsp;
+				<input type="submit" class="post-event-btn-next" value="下一步"></input>
+			</div>
+
+		</form>
+		<!--活动基本信息form 结束-->
+	</div>
+	<!--右边栏结束-->
+</div>

@@ -1,0 +1,82 @@
+<div class="basic-info-container">
+
+	<!--左边栏起始-->
+	<div class="basic-info-sidebar-bg">
+
+		<div class="basic-info-sidebar-pic">
+			<div class="text-area-hint ">
+				<div class="icon-lightbull"></div>
+				<p class="text-area-words">活动提示内容</p>
+			</div>
+		</div>
+	</div>
+	<!--左边栏结束-->
+
+	<!--右边栏起始-->
+	<div class="basic-info-main">
+		<div class="bi-form-title"><label>活动核心描述</label></div>
+		<form novalidate class="basic-info-form">
+			<!--活动性质 起始-->
+			<div class="bi-num-limit-container">
+				<div class="bi-radio-container">
+					<label class="bi-title-text">活动性质:&nbsp;&nbsp;</label>
+					<input type="radio" class="bi-radio-origin" id="numLimit" name="numLimit" checked="checked">
+					<label for="numLimit" class="bi-title-text"><span class="radio">公开</span></label>
+				</div>
+
+				<div class="bi-radio-container">
+					<input type="radio" id="nolimit" class="bi-num-limit-space" name="numLimit">
+					<label class="bi-title-text" for="nolimit"><span class="radio">私密</span></label>
+				</div>
+
+			</div>
+			<!--活动性质 结束-->
+
+
+			<!--活动标签 起始-->
+			<label class="bi-title-text">活动标签：</label>
+			<div class="bc-event-tag">
+				<div class="bi-selecttag-container">
+					<div class="bi-selected-tag" ng-repeat="selectedTag in selectTags track by $index">
+						<div class="bi-tag-bg"><span class="bi-tag-name-style">{{selectedTag.name}}</span>
+							<div class="bi-tag-delete" ng-click="deleteTag(selectedTag.id)"></div>
+						</div>
+					</div>
+					
+					<div class="bi-word-container3">
+						<span class="bi-word-count">{{selectedTagCount}}/6</span>
+					</div>
+				</div>
+
+
+				<div class="container wrap">
+					<div ng-repeat="tag in tagNames track by $index" class="bi-tag">
+						<input id="biTag{{$index}}" class="checkbox-tag" name="biTag{{$index}}" type="checkbox" ng-disabled="tag.disableTag" ng-model="basicDescrip.tags[$index]">
+						<label for="biTag{{$index}}" class="checkbox-tag-label"><span class="bi-tag-name">{{tag.name}}</span></label>
+					</div>
+				</div>
+			</div>
+			<!--活动标签 结束-->
+
+			<!--活动描述 起始-->
+			<label class="bi-title-text">活动描述：</label>
+			<div class="bc-event-description">
+				<textarea class="form-control bc-event-textarea" ng-model="basicDescrip.text" rows="2" cols="50" maxlength="50" wrap="hard"
+					placeholder="一句话来吸引大家"></textarea>
+				<div class="bc-description-text">
+					<span class="bi-word-count">{{titleNum}}/50</span>
+				</div>
+			</div>
+
+
+			<!--活动描述 结束-->
+
+			<div class="post-event-btn1">
+				<button type="submit" class="post-event-btn-save">保存</button>&nbsp;&nbsp;
+				<button type="" class="post-event-btn-next">上一步</button>&nbsp;&nbsp;
+				<button type="" class="post-event-btn-next">下一步</button>
+			</div>
+		</form>
+	</div>
+	<!--右边栏结束-->
+</div>

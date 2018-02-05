@@ -1,0 +1,93 @@
+<div class="eventFiltrResultTagSection">
+    <table class="eventFiltrResultTagTable" sticky>
+        <tr class="eventFilterTR eventFilterTagResult">
+            <td class="eventFilterType"><span class="eventFilterFont">搜索</span></td>
+            <td><event-filter-tag criteria="criteria"></event-filter-tag></td>
+            <td class="filterTagButtonSection"><button class="eventFilterFoldFont eventFilterFoldSection" ng-click="showFilter()">{{isFolded}}</button></td>
+        </tr>
+        <tr class="eventFilterTR eventFilterTagResultFilter"  ng-class="{showFilter:hide}">
+            <td class="eventFilterType"><span class="eventFilterFont">起始时间：</span></td>
+            <td>
+                <div class="bi-event-time eventCalenderFilter">
+                <input type="text" class="form-control cal-input-box event-calender-input" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup2.opened"
+					datepicker-options="dateOptions" placeholder="选择起始日期" close-text="Close" ng-click="open2()" />
+                <span class="input-group-btn event-calender-group-btn">
+                    <button type="button" class="btn btn-default cal-input-btn event-calender-section" ng-click="open2()"><div class="event-calender-icon"></div><i class="cal-input-icon event-cal-input-icon"></i></button>
+                </span>
+                </div>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr class="eventFilterTR eventFilterTagResultFilter" ng-class="{showFilter:hide}">
+            <td class="eventFilterType"><span class="eventFilterFont">活动地点：</span></td>
+            <td >
+                <select id="provinceSelector" ng-change="provinceChange()" ng-model="province" ng-options="pro.name for pro in provinces"></select>
+                <select id="citySelector" ng-change="cityChange()" ng-model="city" ng-options="cit.name for cit in cities"></select>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr class="eventFilterTR eventFilterTagResultFilter" ng-class="{showFilter:hide}">
+            <td class="eventFilterType"><span class="eventFilterFont">活动标签：</span></td>
+            <td><span ng-repeat="tag in types"><event-tag tag='tag' pill='pill'></event-tag></span></td>
+            <td>
+            </td>
+        </tr>
+        <tr class="eventFilterTR eventFilterTagResultFilter" ng-class="{showFilter:hide}">
+            <td class="eventFilterType"><span class="eventFilterFont">收费类型：</span></td>
+            <td class="eventFreeOrNot">
+                <input type="radio" class="radionStyle radioButtonIcon" ng-model="free" value="付费" ng-click='freeOrNot(free)'/>
+                <label class="eventFilterLabel">付费</label>
+                <input type="radio" class="radionStyle radioButtonIcon" ng-model="free" value="免费" ng-click='freeOrNot(free)'/>
+                <label class="eventFilterLabel">免费</label>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="eventFilterSection">
+    <table class="eventFilterTable" id="filterTag">
+        <tr class="eventFilterTR">
+            <td class="eventFilterType"  ng-class="{showFilter:!hide}"><span class="eventFilterFont">起始时间：</span></td>
+            <td  ng-class="{showFilter:!hide}">
+                <div class="bi-event-time eventCalenderFilter">
+                <input type="text" class="form-control cal-input-box event-calender-input" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup2.opened"
+					datepicker-options="dateOptions" placeholder="选择起始日期" close-text="Close" ng-click="open2()" />
+                <span class="input-group-btn event-calender-group-btn">
+                    <button type="button" class="btn btn-default cal-input-btn event-calender-section" ng-click="open2()"><div class="event-calender-icon"></div><i class="cal-input-icon event-cal-input-icon"></i></button>
+                </span>
+                </div>
+            </td >
+            <td ng-class="{occupy:!hide}">
+            </td>
+        </tr>
+        <tr class="eventFilterTR">
+            <td class="eventFilterType"  ng-class="{showFilter:!hide}"><span class="eventFilterFont">活动地点：</span></td>
+            <td  ng-class="{showFilter:!hide}"> 
+                <select id="provinceSelector" ng-change="provinceChange()" ng-model="province" ng-options="pro.name for pro in provinces"></select>
+                <select id="citySelector" ng-change="cityChange()" ng-model="city" ng-options="cit.name for cit in cities"></select>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr class="eventFilterTR">
+            <td class="eventFilterType" ng-class="{showFilter:!hide}"><span class="eventFilterFont">活动标签：</span></td>
+            <td><span ng-repeat="tag in types" ng-class="{showFilter:!hide}"><event-tag tag='tag' pill='pill'></event-tag></span></td>
+            <td>
+            </td>
+        </tr>
+        <tr class="eventFilterTR">
+            <td class="eventFilterType" ng-class="{showFilter:!hide}"><span class="eventFilterFont">收费类型：</span></td>
+            <td class="eventFreeOrNot" ng-class="{showFilter:!hide}">
+                <input type="radio" class="radionStyle radioButtonIcon" ng-model="free" value="付费" ng-click='freeOrNot(free)'/>
+                <label class="eventFilterLabel">付费</label>
+                <input type="radio" class="radionStyle radioButtonIcon" ng-model="free" value="免费" ng-click='freeOrNot(free)'/>
+                <label class="eventFilterLabel">免费</label>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</div>
